@@ -36,6 +36,16 @@ body{
     font-family: var(--cor0);
 }
 
+a.externo::after {
+
+    content: '\0020\1F517';
+
+}
+
+abbr {
+    text-decoration: none;
+}
+
 header {
     background-image: linear-gradient(to bottom, var(--cor3), var(--cor4));
     min-height: 150px;
@@ -122,20 +132,18 @@ article {
     border-radius: 10px;
 }
 
-ul{
-    list-style-type: '\2714\0020\0020';
-    list-style-position: inside;
-}
 
-ul a {
+a {
     color: var(--cor4);
-    
 }
 
-ul a:hover{
+
+ a:hover{
     background-color: var(--cor0);
     padding: 5px;
+    border-radius: 2px;
 }
+
 
 div.video {
     position: relative;
@@ -144,6 +152,7 @@ div.video {
     margin-right: -20px;
     margin-bottom: 15px;
     padding-bottom: 59%;
+    margin: auto;
     
 }
 
